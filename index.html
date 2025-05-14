@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup</title>
+
+  <!-- Bootstrap and Font Awesome -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Signup Form Container -->
+  <div class="signup-box">
+    <h2>Signup</h2>
+
+    <!-- Signup Form -->
+    <form onsubmit="validateSignup(event)">
+      <!-- Full Name -->
+      <div class="form-group">
+        <input type="text" id="signupName" class="form-control" placeholder="Full Name" required />
+      </div>
+
+      <!-- Email Address -->
+      <div class="form-group">
+        <input type="email" id="signupEmail" class="form-control" placeholder="Email" required />
+      </div>
+
+      <!-- Mobile Number -->
+      <div class="form-group">
+        <input type="tel" id="signupMobile" class="form-control" placeholder="Mobile (10 digits)" maxlength="10" required />
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <input type="password" id="signupPassword" class="form-control" placeholder="Password" required />
+        <i class="fas fa-eye-slash toggle-password" onclick="togglePassword('signupPassword')"></i>
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="form-group">
+        <input type="password" id="signupConfirmPassword" class="form-control" placeholder="Confirm Password" required />
+        <i class="fas fa-eye-slash toggle-password" onclick="togglePassword('signupConfirmPassword')"></i>
+      </div>
+
+      <!-- Error Message -->
+      <div class="error" id="signupError"></div>
+
+      <!-- Signup Button -->
+      <button type="submit" class="btn btn-custom">Signup</button>
+
+      <!-- Redirect to Login -->
+      <div class="text-link">
+        Already have an account? <a href="#">Login</a>
+      </div>
+    </form>
+  </div>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
