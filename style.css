@@ -1,0 +1,89 @@
+/* Fullscreen background */
+body {
+  background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Form container box */
+.signup-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form field styling */
+.form-group {
+  position: relative;
+}
+
+.form-control {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.form-control:focus {
+  border-color: #61dafb;
+  box-shadow: 0 0 8px #61dafb;
+}
+
+/* Password toggle icon */
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Submit button */
+.btn-custom {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bold;
+  padding: 12px;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #21a1f1;
+  transform: scale(1.03);
+}
+
+/* Error message */
+.error {
+  color: #c40b0b;
+  font-size: 0.85rem;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+/* Link to login */
+.text-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.text-link a {
+  color: #21a1f1;
+  text-decoration: none;
+  font-weight: bold;
+}
